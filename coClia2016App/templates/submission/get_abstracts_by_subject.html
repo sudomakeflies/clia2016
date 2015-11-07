@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<h3>{{ subject }}</h3>
+<ul>
+{% for i in qabs %}
+	<li><a href="/submissions/download/{{ i.key.id() }}">Author: {{ i.name }}, {{ i.email }} | date:{{ i.date }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

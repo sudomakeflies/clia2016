@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clia2016</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/owl.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/animate.css">
+	<link href="/static/font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/static/css/et-icons.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/lightbox.css">
+	<link id="main" rel="stylesheet" type="text/css" href="/static/css/publisher.css">
+	<!--[if lt IE 9]><script src="/static/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<body>
+<div id="wrapper" class="behind">
+<header>
+	<div class="container">
+			<div class="col-md-6 col-sm-12 wow animated fadeInUp">
+				<div class="intro-book">
+					<img src="/static/img/logofinal.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 intro-text hidden-sm hidden-xs wow animated fadeInUp">
+				<h2 class="heading">Clia 2016</h2>
+				<h4 class="subheading">XII Congreso Latinoamericano y del Caribe de Ingeniería Agrícola.</h4>
+				<p></p>
+				<a href="#book" class="scrollto btn btn-white">Preinscripciones</a>
+				<a href="#contact" class="btn btn-green">Contactenos</a>
+			</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img height="25px" src="/static/img/logo_clia2016.png" alt=""></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right main-nav">
+				<li><a href="#book" class="scrollto">Preinscripción</a></li>
+				<li><a href="#author" class="scrollto">Guía para autores</a></li>
+				<li><a href="#contact" class="scrollto">Contacto</a></li>
+				<li><a href="#" class="btn btn-green" data-toggle="modal" data-target=".bs-example-modal-sm">Agenda del evento</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<section id="book">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/static/img/clia2016.jpg" width="500px" />
+			</div>
+			<div class="col-md-6">
+				<h2 class="heading wow animated fadeInUp">Preinscripciones!</h2>
+				<h4 class="subheading wow animated fadeInUp">Quieres asistir al XII Congreso Latinoamericano y del Caribe de Ingeniería Agrícola.</h4>
+				
+				<form class="form-horizontal" method="POST" action="/preinscripcion">
+				  <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}" />
+				  <div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-10">
+					  <input name="email" type="email" class="form-control" id="inputEmail3" data-validation="email" placeholder="Email">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="inputPassword3" class="col-sm-2 control-label">Nombre</label>
+					<div class="col-sm-10">
+					  <input name="name" type="text" class="form-control" id="inputPassword3" data-validation="required" placeholder="Nombre">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+					  <button type="submit" class="btn btn-default">Preinscribete!</button>
+					</div>
+				  </div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center wow animated fadeInUp">
+				<p class="white">"La innovación, la principal clave para mejorar y aumentar la producción hortofrutícola" {{ p }} <b> <a style="color:#fff;" href="https://twitter.com/Ing_Agricola"><i class="fa fa-twitter"></i></a></b></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="reviews" class="reviews">
+	<div class="container">
+		<div class="row">	
+			<div class="col-sm-6 text-left">
+				<h2 class="heading">Áreas Clia 2016</h2>
+			</div>
+			<div class="col-sm-6 text-right text-left-mobile">
+				<div class="rate-amount text-right">
+					<span>(9 áreas)</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="owl-reviews">
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Maquinaria agrícola y agroindustrial</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Ingeniería de agua y suelo</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Tecnología de postcosecha y agroindustria</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Infraestructura rural y manejo de ambientes</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Geoinformática</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Control y automatización en biosistemas</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Energías alternativas en la agricultura</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Desarrollo rural sostenible</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Educación en la ingeniería agrícola</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="author">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row author">
+					<div class="col-sm-8 author-name">
+						<h2 class="heading wow animated fadeInUp">Guia para autores</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="subheading gray wow animated fadeInUp">Siga las siguientes instrucciones para enviar su resumen.</h3>
+						<p class="small muted-light wow animated fadeInUp">Una vez terminado el proceso recibirá un correo de confirmación.</p>
+					</div>
+				</div>
+			</div> <!-- col-md-6 author -->
+			<div class="col-md-4 col-md-offset-2">
+				<h3 class="heading wow animated fadeInUp">Presentación de trabajos</h3>
+				<h4 class="subheading muted no-margin wow animated fadeInUp">Guia paso a paso para autores</h4>
+
+				<div class="locations">
+					<div class="location">
+						<h4 class="heading wow animated fadeInUp">Fecha limite de envío de resúmenes</h4>
+						<div class="date">
+							<i class="fa fa-calendar"></i> __/__/2016
+						</div>
+						<div class="time">
+							<i class="fa fa-clock-o"></i> 8:00 PM
+						</div>
+						<div class="directions">
+							<a href="https://www.google.com/maps/dir/760+West+Genesee+Street+Syracuse+NY+13204/314+Avery+Avenue+Syracuse+NY+13204" class="get-direction" target="_blank" data-title="Get Directions"><i class="fa fa-compass"></i></a>
+						</div>
+					</div>
+					<div class="location">
+						<h4 class="heading wow animated fadeInUp">Fecha limite inscripción</h4>
+						<div class="date">
+							<i class="fa fa-calendar"></i> __/__/2015
+						</div>
+						<div class="time">
+							<i class="fa fa-clock-o"></i> 8:00 PM
+						</div>
+						<div class="directions">
+							<a href="https://www.google.com/maps/dir/760+West+Genesee+Street+Syracuse+NY+13204/314+Avery+Avenue+Syracuse+NY+13204" class="get-direction" target="_blank"  data-title="Get Directions"><i class="fa fa-compass"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 text-left text-center-mobile wow animated fadeInUp">
+				<h2 class="heading white top-fit">Únete a nosotros en Facebook <i class="fa fa-facebook"></i></h2>
+				<h4 class="subheading white no-margin">Más de 7000 Ingenieros Agrícolas siguen esta pagina.</h4>
+			</div>
+			<div class="col-md-4 text-right wow animated fadeInUp text-center-mobile">
+				<div class="fb-like" data-href="https://www.facebook.com/Ingenieros.Agricolas" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sample-form">
+	<div class="container">
+		<form id="submit-frm" action="php/sampleMail.php" method="post" class="sample-form">
+			<div class="row">
+				<div class="col-sm-5">
+					<input type="text" class="form-control" name="firstname" placeholder="Name" data-validation="required">
+				</div>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" name="email" placeholder="Email" data-validation="email">
+				</div>
+				<div class="col-sm-2">
+					<input type="submit" class="btn btn-green sign-up-button sample-button-done" value="Subscribe">
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details">
+				<h3 class="heading no-margin wow animated fadeInUp">Contacto</h3>
+				<h4 class="subheading muted no-margin wow animated fadeInUp">No dude en presentar sus inquietudes.</h4>
+				<div class="details">
+					<h6 class="heading no-margin">Comite organizador</h6>
+					<p class="small muted wow animated fadeInUp no-margin">Universidad Nacional de Colombia (Unal), Asociación de Ingenieros Agrícolas de Colombia (Asiac)</p>
+				</div>
+				<div class="details">
+					<h4 class="subheading accent no-margin wow animated fadeInUp">+  (571) 3165000 ext. 13346, (571) 2225181 <br>
+					clia2016@gmail.com</h4>
+				</div>
+			</div>
+			<form action="/contacto" method="POST" class="mail-form">
+				<input type="hidden" name="_csrf_token" value="{{ csrf_token() }}" />
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-sm-6">
+							<input name="name" type="text" class="form-control" placeholder="Name" data-validation="required">
+						</div>
+						<div class="col-sm-6">
+							<input name="email" type="text" class="form-control" placeholder="Email" data-validation="email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<input name="subject" type="text" class="form-control" placeholder="Subject" data-validation="required">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<textarea name="message" class="form-control" rows="10" placeholder="Message. . ." data-validation="required"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12.text-left">
+							<input type="submit" class="btn btn-green contact-button" value="Enviar">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 text-left text-center-mobile">
+				<p class="copyright small muted">Copyleft © 2015 Clia2016</p>
+			</div>
+			<div class="col-sm-6 text-right text-center-mobile">
+				<div class="social">
+					<a href="https://www.facebook.com/Ingenieros.Agricolas" class="facebook"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/Ing_Agricola" class="twitter"><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div>
+
+<div class="notification-box"><span>Sending...</span></div>
+<div class="mobile-nav">
+	<ul class="menu">
+		
+	</ul>
+</div>
+
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Agradecemos su comprensión</h4>
+      </div>
+      <div class="modal-body">
+		Agenda en  contrucción.... 
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/owl.carousel.js"></script>
+<script src="/static/js/lightbox.min.js"></script>
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/jquery.onepagenav.js"></script>
+<script src="/static/js/core.js"></script>
+<script src="/static/js/tooltip.js"></script>
+<script src="/static/js/jquery.form-validator.js"></script>
+<script src="/static/js/preloader.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

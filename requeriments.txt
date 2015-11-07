@@ -1,0 +1,6 @@
+flask
+flask_admin
+flask_wtf
+wtforms_appengine
+Flask-RESTful
+flask_oauthlib
